@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Dos Números</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Suma de Dos Números</h1>
+    <form id="sumForm">
+        <label for="number1">Número 1:</label>
+        <input type="number" id="number1" required>
+        <br><br>
+        <label for="number2">Número 2:</label>  
+        <input type="number" id="number2" required>
+        <br><br>
+        <button type="button" onclick="sumar()">Sumar</button>
+    </form>
+    <br>
+    <h2>Resultado: <span id="resultado"></span></h2>
+
+    <h1>resta de Dos Números</h1>
+    <form id="restaForm">
+        <label for="restanumber1">Número 1:</label>
+        <input type="number" id="restanumber1" required>
+        <br><br>
+        <label for="restanumber2">Número 2:</label>  
+        <input type="number" id="restanumber2" required>
+        <br><br>
+        <button type="button" onclick="resta()">restar</button>
+    </form>
+    <br>
+    <h2>Resultado: <span id="resresultado"></span></h2>
+
+    <h1>multiplicacion de Dos Números</h1>
+    <form id="multiForm">
+        <label for="multinumber1">Número 1:</label>
+        <input type="number" id="multinumber1" required>
+        <br><br>
+        <label for="multinumber2">Número 2:</label>  
+        <input type="number" id="multinumber2" required>
+        <br><br>
+        <button type="button" onclick="multiplicacion()">multiplicacion</button>
+    </form>
+    <br>
+    <h2>Resultado: <span id="multiresultado"></span></h2>
+
+    <h1>Divisionde Dos Números</h1>
+    <form id="diviForm">
+        <label for="divinumber1">Número 1:</label>
+        <input type="number" id="divinumber1" required>
+        <br><br>
+        <label for="divinumber2">Número 2:</label>  
+        <input type="number" id="divinumber2" required>
+        <br><br>
+        <button type="button" onclick="division()">division</button>
+    </form>
+    <br>
+    <h2>Resultado: <span id="diviresultado"></span></h2>
+
+    <script>
+        function sumar() {
+            // Obtener los valores de los campos de entrada
+            let num1 = parseFloat(document.getElementById('number1').value);
+            let num2 = parseFloat(document.getElementById('number2').value);
+
+            // Calcular la suma
+            let suma = num1 + num2;
+
+            // Mostrar el resultado
+            document.getElementById('resultado').textContent = suma;
+            
+            }
+
+            function resta() {
+                // Obtener los valores de los campos de entrada
+                let num1 = parseFloat(document.getElementById('restanumber1').value);
+                let num2 = parseFloat(document.getElementById('restanumber2').value);
+    
+                // Calcular la suma
+                let resta = num1 - num2;
+    
+                // Mostrar el resultado
+                document.getElementById('resresultado').textContent = resta;
+            }
+
+            function multiplicacion() {
+                // Obtener los valores de los campos de entrada
+                let num1 = parseFloat(document.getElementById('multinumber1').value);
+                let num2 = parseFloat(document.getElementById('multinumber2').value);
+    
+                // Calcular la suma
+                let multiplicacion = num1 * num2;
+    
+                // Mostrar el resultado
+                document.getElementById('multiresultado').textContent = multiplicacion;
+            }
+
+            function division() {
+                // Obtener los valores de los campos de entrada
+                let num1 = parseFloat(document.getElementById('divinumber1').value);
+                let num2 = parseFloat(document.getElementById('divinumber2').value);
+    
+                // Calcular la suma
+                let division = num1 / num2;
+    
+                // Mostrar el resultado
+                document.getElementById('diviresultado').textContent = division;
+            }
+
+    </script>
+</body>
+</html>
